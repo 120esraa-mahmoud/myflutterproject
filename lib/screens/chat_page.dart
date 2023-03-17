@@ -19,6 +19,9 @@ class ChatPage extends StatelessWidget {
          List<Message> messageList = [];
          for(int i = 0; i<snapshot.data!.docs.length;i++){
            messageList.add(Message.fromJson(snapshot.data!.docs[i]));
+
+
+
          }
          return Scaffold(
              appBar: AppBar(
